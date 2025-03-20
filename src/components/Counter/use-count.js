@@ -1,10 +1,10 @@
 import { useState } from "react";
 
+const COUNT_MAX = 5;
+const COUNT_MIN = 0;
+
 export const useCount = () => {
   const [count, setCount] = useState(0);
-
-  const COUNT_MAX = 5;
-  const COUNT_MIN = 0;
 
   const increment = () => {
     if (count < COUNT_MAX) {

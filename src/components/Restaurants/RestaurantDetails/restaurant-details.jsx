@@ -1,12 +1,12 @@
 import { Menu } from "../../Menu/menu.jsx";
 import { Reviews } from "../../Reviews/reviews.jsx";
 
-export const RestaurantDetails = ({ activeRestaurant }) => {
-  const { name, menu, reviews } = activeRestaurant;
+export const RestaurantDetails = ({ restaurant }) => {
+  const { name, menu, reviews } = restaurant;
   return (
     <div
       style={{
-        height: "calc(100vh - 120px)",
+        height: "calc(100vh - 160px)",
       }}
     >
       <div
